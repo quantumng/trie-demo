@@ -1,8 +1,8 @@
 const DICTS = [
     'zhīdào',
-    'zhōnghuá',
-    'rénmín',
-    'gònghéguó',
+    // 'zhōnghuá',
+    // 'rénmín',
+    // 'gònghéguó',
     'wànsuì',
     'zhōnghuárénmíngònghéguó',
 ]
@@ -124,5 +124,16 @@ class WordCount {
 
 const wordcount = new WordCount();
 
-const res = wordcount.parseText('zhōnghuárénmíngònghéguó wànsuì');
-console.log('res', res);
+// zhōnghuárénmíngònghéguó wànsuì
+var editor = document.getElementById('editor');
+var btn = document.getElementById('submit');
+var count = document.getElementById('count');
+var tokens = document.getElementById('tokens');
+btn.addEventListener('click', function() {
+    console.time('time wrapper');
+    var content = editor.value;
+    var strArr = wordcount.parseText(content.trim());
+    tokens.innerText = strArr.toString();
+    count.innerText = strArr.length;
+    console.timeEnd('time wrapper');
+});
