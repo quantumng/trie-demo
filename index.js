@@ -4,7 +4,7 @@ const DICTS = [
     'rénmín',
     'gònghéguó',
     'wànsuì',
-    // 'zhōnghuárénmíngònghéguó',
+    'zhōnghuárénmíngònghéguó',
 ]
 
 
