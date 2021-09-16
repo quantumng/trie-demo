@@ -1,8 +1,8 @@
 const DICTS = [
     'zhīdào',
-    // 'zhōnghuá',
-    // 'rénmín',
-    // 'gònghéguó',
+    'zhōnghuá',
+    'rénmín',
+    'gònghéguó',
     'wànsuì',
     'zhōnghuárénmíngònghéguó',
 ]
